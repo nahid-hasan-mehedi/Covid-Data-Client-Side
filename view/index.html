@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+    <title>Covid Data Client Side</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1 style="color: rgb(162, 90, 90)">   Covid Data Web Interface</h1>
+    <div class="tab">
+        <button class="tablinks" style="color: rgb(75, 107, 148)">Find</button>                       
+      </div>
+      
+
+      <div id="find-data" class="tabcontent">
+        <form>
+            <label for="find-date">Date</label>
+            <input type="text" id="find-date-search">
+            <div>
+                <button id="btn-find-date">Find</button>
+                <output id="find-out"></output>
+            </div>
+        </form>
+        <hr>
+
+        <h2 style="color: rgb(117, 56, 56)">Covid information</h2>
+        <div class="flex-container">            
+            <label for="find_id">Id</label>
+            <input type="text" id="find_id">
+
+            <label for="find-iso_code">Iso_code</label>
+            <input type="text" id="find-iso_code">
+
+            <label for="find-continent">Continent</label>
+            <input type="text" id="find-continent">
+
+            <label for="find-location">Location</label>
+            <input type="text" id="find-location">
+
+            <label for="find-date">Date</label>
+            <input type="text" id="find-date">
+
+            <label for="find-total_cases">Total_cases</label>
+            <input type="text" id="find-total_cases">
+
+
+            <label for="find-new_cases">New_cases</label>
+            <input type="text" id="find-new_cases">
+
+            <label for="find-total_deaths">Total_deaths</label>
+            <input type="text" id="find-total_deaths">
+
+            <label for="find-new_deaths">New_deaths</label>
+            <input type="text" id="find-new_deaths">
+
+        </div> 
+
+        <body>
+            <h1 style="color: rgb(191, 11, 11)">COVID-19 Deaths Between Dates</h1>
+            <form id="date-form">
+                <label for="start-date">Start Date:</label>
+                <input type="date" id="start-date" required>
+                <label for="end-date">End Date:</label>
+                <input type="date" id="end-date" required>
+                <button id="btn-get-deaths">Get Deaths</button>
+            </form>
+            <div id="result"></div>
+        </body>
+      
+        <div class="flex-button-container">
+            <button id="btn-update-contact">Update</button>
+            <button id="btn-delete-contact">Delete</button>
+            <output id="update-delete-out"></output>
+        </div>
+      </div>
+      <div id="list-contacts" class="tabcontent"></div>   
+      <script src="./js/main.js"></script>     
+      <script src="./js/find.js"></script>   
+      <script src="./js/findrange.js"></script>                     
+</body>
