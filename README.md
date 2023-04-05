@@ -1,4 +1,5 @@
 Step:
+Please Install All Node module
 Before running make sure all database and connection are working.Iclude can.csv in database 
 
 1:Run app.mjs then open your browser and go to (http://localhost:3000)
